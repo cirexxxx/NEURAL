@@ -13,7 +13,7 @@
     padding: 0;
     background-image: 
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-      url('../images/background.jpg'); /* Сначала градиент, потом картинка */
+      url('/images/background.jpg'); /* Используем абсолютный путь для картинки */
     background-size: cover; /* Растягивает изображение на весь экран */
     background-position: center; /* Центрирует изображение */
     background-repeat: no-repeat; /* Предотвращает повторение изображения */
