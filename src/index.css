@@ -1,3 +1,6 @@
+/* src/index.css */
+
+/* Стандартные стили для body */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,32 +16,14 @@
     padding: 0;
     background-image: 
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-      url('/images/background.jpg'); /* Используем абсолютный путь для картинки */
-    background-size: cover; /* Растягивает изображение на весь экран */
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Предотвращает повторение изображения */
+      url('../images/background.jpg'); /* Сначала градиент, потом картинка */
+    background-size: cover; /* Растягиваем изображение на весь экран */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
   }
   
   #root {
     height: 100%;
     width: 100%;
-  }
-}
-
-@layer components {
-  .nav-item {
-    @apply flex flex-col items-center justify-center text-white text-xs opacity-70 transition-opacity duration-200;
-  }
-  
-  .nav-item.active {
-    @apply opacity-100;
-  }
-  
-  .progress-bar {
-    @apply h-2 rounded-full bg-gray-700 bg-opacity-50 overflow-hidden;
-  }
-  
-  .progress-bar-fill {
-    @apply h-full bg-gradient-to-r from-blue-400 to-cyan-300 rounded-full transition-all duration-500 ease-out;
   }
 }
