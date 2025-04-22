@@ -12,10 +12,11 @@
     margin: 0;
     padding: 0;
     background-image: 
-      url('images/background.jpg'), /* Фоновое изображение */
+      url('/images/background.jpg'), /* Фоновое изображение */
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Прозрачность */
     background-size: cover; /* Растягивает изображение на весь экран */
     background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Предотвращает повторение изображения */
   }
   
   #root {
@@ -41,3 +42,4 @@
     @apply h-full bg-gradient-to-r from-blue-400 to-cyan-300 rounded-full transition-all duration-500 ease-out;
   }
 }
+
