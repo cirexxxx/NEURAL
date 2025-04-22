@@ -1,3 +1,5 @@
+// src/App.tsx
+
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
@@ -7,7 +9,7 @@ import Background from './components/Background';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
-  const userName = 'cirex'; // Updated username
+  const userName = 'cirex'; // Убедились, что передаем правильное имя
   const progress = 65;
 
   return (
